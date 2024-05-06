@@ -1,0 +1,104 @@
+:root {
+  .container__11d72.themed_b152d4 {
+    background: var(--background-secondary);
+
+    .children__32014::after {
+      background: linear-gradient(
+        90deg,
+        rgba(54, 57, 63, 0) 0,
+        var(--background-secondary)
+      );
+    }
+
+    // Search bar
+    .search__07df0 {
+      order: 1;
+      margin-left: 4px;
+
+      .search_ac353c:not(.open_d3ab4e) {
+        .searchBar_e0c60b {
+          width: 27px;
+          transition: 250ms;
+          background-color: transparent;
+
+          .iconContainer__8fa9c {
+            transform: scale(1.3);
+            transition: 250ms;
+
+            .icon_f50f05 {
+              color: var(--interactive-normal);
+            }
+          }
+        }
+
+        &:hover .searchBar_e0c60b {
+          width: 220px;
+          background-color: var(--background-tertiary);
+
+          .iconContainer__8fa9c {
+            transform: scale(1);
+
+            .icon_f50f05 {
+              color: var(--text-muted);
+            }
+          }
+        }
+      }
+      .searchAnswer_b452e7,
+      .searchFilter__118cb {
+        background-color: var(--background-primary);
+      }
+    }
+  }
+
+  // I'm a pro
+  .toolbar__88c63 > a[href="https://support.discord.com"],
+  .searchLearnMore_bf7b8e {
+    display: none;
+  }
+
+  // -- Search bar and modal --
+  .container_d6dad3 {
+    background-color: var(--background-secondary-alt);
+    box-shadow: none;
+
+    .resultsGroup-1BPR25 .header-3A13BX {
+      text-align: center;
+    }
+
+    .queryContainer_c359fe {
+      background-color: var(--background-tertiary);
+    }
+
+    .option_b5597b {
+      margin: 0;
+      border-radius: 0;
+
+      &::after {
+        background: linear-gradient(
+          90deg,
+          rgba(54, 57, 63, 0),
+          var(--background-secondary-alt) 80%
+        );
+      }
+      &.selected-rZcOL- {
+        background: linear-gradient(
+          90deg,
+          rgba(54, 57, 63, 0),
+          var(--background-secondary) 80%
+        );
+      }
+    }
+
+    // Calendar
+    .calendarPicker__5c474 .react-datepicker {
+      background-color: var(--background-secondary-alt);
+
+      &__day,
+      &__header {
+        background: var(--background-secondary-alt) !important;
+        border-color: var(--background-tertiary);
+      }
+    }
+  }
+}

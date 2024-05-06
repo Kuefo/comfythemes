@@ -1,0 +1,90 @@
+:root {
+  // GameActivity support
+  #GameActivityToggleBtn .st0 {
+    fill: var(--user-buttons-color);
+  }
+
+  // Game Activity Toggle
+  #status-picker [aria-label="Hide Game Activity"]::after,
+  #status-picker [aria-label="Show Game Activity"]::after {
+    content: "Not supported in this area";
+  }
+
+  // CustomStatusPresets
+  #status-picker .submenuContainer-3EVTeH {
+    grid-column: 1/5;
+  }
+
+  // PermisssionViewer, thx _david_
+  #permissions-modal-wrapper {
+    #permissions-modal {
+      box-shadow: none !important;
+      border: none !important;
+    }
+
+    .header {
+      background: var(--background-tertiary) !important;
+      text-align: center !important;
+    }
+
+    .role-side,
+    .perm-side {
+      background: var(--background-secondary) !important;
+    }
+  }
+
+  // Member Count
+  #MemberCount {
+    background-color: var(--background-secondary) !important;
+  }
+
+  // BetterDiscord Server folder
+  .guilds__2b93a.content-Pph8t6
+    + .base__3e6af
+    .panels__58331
+    > .container_ca50b9
+    > .avatarWrapper_ba5175 {
+    transition: margin-left 300ms linear;
+  }
+  .guilds__2b93a.content-Pph8t6:not(.closed-j55_T-)
+    + .base__3e6af
+    .panels__58331
+    > .container_ca50b9
+    > .avatarWrapper_ba5175 {
+    margin-left: 72px;
+  }
+
+  // Vencord Sever folder
+  .vc-bf-folder-sidebar
+    + .base__3e6af
+    .panels__58331
+    > .container_ca50b9
+    > .avatarWrapper_ba5175 {
+    transition: margin-left 300ms linear;
+  }
+  .vc-bf-folder-sidebar
+    + .base__3e6af
+    .panels__58331
+    > .container_ca50b9
+    > .avatarWrapper_ba5175 {
+    margin-left: 72px;
+  }
+
+  // Hide Channels
+  .sidebar_ded4b5 .avatarWrapper_ba5175 {
+    transition: margin-left 400ms ease;
+  }
+  .sidebar_ded4b5.hideChannelElement .avatarWrapper_ba5175 {
+    margin-left: -240px;
+  }
+
+  // UserBackground
+  .root-8LYsGj .UserBackgrounds-banner-container {
+    position: static;
+
+    .UserBackgrounds-banner-badge {
+      top: 13px;
+      right: 50px;
+    }
+  }
+}

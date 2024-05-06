@@ -1,0 +1,39 @@
+/* ═══════『 🎵 ・ Better SpotifyControls seek bar 』*/
+.container_6sXIoE {
+  border-bottom: none !important;
+  margin-bottom: 0 !important;
+}
+.container_6sXIoE .timeline_UWmgAx {
+  position: relative !important;
+}
+.container_6sXIoE .bar_g2ZMIm {
+  position: absolute !important;
+  bottom: -6px !important;
+  left: -8px !important;
+  width: 240px !important;
+  height: 53px !important;
+  margin: 0 !important;
+  -webkit-mask-image: linear-gradient(0.25turn, #0008, #0002) !important;
+  mask-image: linear-gradient(0.25turn, #0008, #0002) !important;
+  border-radius: 0 !important;
+}
+.barFill_Dhkah7 {
+  border-radius: 0 !important;
+}
+.container_6sXIoE.maximized_vv2Wr0 .bar_g2ZMIm {
+  height: 88px !important;
+}
+.container_6sXIoE .button__4f306:hover {
+  background-color: transparent !important;
+}
+.barFill_Dhkah7,
+.timeline_UWmgAx:hover .barFill_Dhkah7 {
+  background: var(--spotify-color) !important;
+}
+.inner_WRV6k5 {
+  z-index: 1 !important;
+}
+.barText_lmqc5O,
+.grabber_7sd5f5 {
+  display: none !important;
+}

@@ -1,0 +1,380 @@
+:root {
+  // -- Guild header popout --
+  #guild-header-popout {
+    .item__183e8 {
+      flex-direction: row-reverse;
+
+      .iconContainer__829e7 {
+        margin: 0 8px 0 0;
+      }
+    }
+
+    // Server profile icon fix
+    .icon__37f95 {
+      width: 100%;
+      height: 100%;
+    }
+
+    // Boost
+    &-premium-subscribe {
+      &:hover,
+      &:active:not(.hideInteraction__2790e),
+      &.focused__27621 {
+        background-color: #ff73fa1c;
+      }
+      .icon_f09dde {
+        color: #ff73fa;
+      }
+    }
+
+    // Invite
+    &-invite-people {
+      color: #677bc4;
+
+      &:hover,
+      &:active:not(.hideInteraction__2790e),
+      &.focused__27621 {
+        background-color: #677bc41e;
+      }
+      .icon_f09dde {
+        color: #677bc4;
+      }
+    }
+
+    // Settings
+    &-settings {
+      &:hover,
+      &:active:not(.hideInteraction__2790e),
+      &.focused__27621 {
+        background-color: #546e7a1e;
+      }
+      .icon_f09dde {
+        color: #546e7a;
+      }
+    }
+
+    // Insights
+    &-insights {
+      &:hover,
+      &:active:not(.hideInteraction__2790e),
+      &.focused__27621 {
+        background-color: #1abc9c23;
+      }
+      .icon_f09dde {
+        color: #1abc9c;
+      }
+    }
+
+    // Create channel
+    &-create-channel {
+      &:hover,
+      &:active:not(.hideInteraction__2790e),
+      &.focused__27621 {
+        background-color: #e91e6221;
+      }
+      .icon_f09dde {
+        color: #e91e63;
+      }
+    }
+
+    // Create category
+    &-create-category {
+      &:hover,
+      &:active:not(.hideInteraction__2790e),
+      &.focused__27621 {
+        background-color: #eaa14e13;
+      }
+      .icon_f09dde {
+        color: #eaa14e;
+      }
+    }
+
+    // Create event
+    &-create-event {
+      &:hover,
+      &:active:not(.hideInteraction__2790e),
+      &.focused__27621 {
+        background-color: #ede9e611;
+      }
+      .icon_f09dde {
+        & > path:first-child {
+          fill: #677bc4;
+        }
+        & > path:last-child {
+          fill: #ede9e6;
+        }
+      }
+    }
+
+    // Active threads
+    &-active-threads {
+      &:hover,
+      &:active:not(.hideInteraction__2790e),
+      &.focused__27621 {
+        background-color: #5488f731;
+      }
+      .icon_f09dde {
+        color: #5488f7;
+      }
+    }
+
+    // Application directory
+    &-application-directory {
+      &:hover,
+      &:active:not(.hideInteraction__2790e),
+      &.focused__27621 {
+        background-color: #30495713;
+      }
+      .icon_f09dde {
+        color: #304957;
+      }
+    }
+
+    // Notifications
+    &-notifications {
+      &:hover,
+      &:active:not(.hideInteraction__2790e),
+      &.focused__27621 {
+        background-color: #e9bb4815;
+      }
+      .icon_f09dde {
+        color: #fcd462;
+      }
+    }
+
+    // Privacy
+    &-privacy {
+      &:hover,
+      &:active:not(.hideInteraction__2790e),
+      &.focused__27621 {
+        background-color: #4a83d418;
+      }
+      .icon_f09dde {
+        color: #4a84d4;
+      }
+    }
+
+    // Nickname
+    &-change-nickname {
+      &:hover,
+      &:active:not(.hideInteraction__2790e),
+      &.focused__27621 {
+        background-color: #43b58218;
+      }
+      .icon_f09dde {
+        color: #43b581;
+      }
+    }
+
+    // Hide muted channels
+    &-hide-muted-channels {
+      &:hover,
+      &:active:not(.hideInteraction__2790e),
+      &.focused__27621 {
+        background-color: #5c6eb117;
+      }
+      &:hover svg > path {
+        &:first-child {
+          color: var(--control-brand-foreground);
+        }
+        &:last-child {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  // Categories arrows
+  .mainContent_a0b319 .arrow_cb03b8 {
+    display: none;
+  }
+
+  // Thread channels
+  .spine__88e6d {
+    z-index: 1;
+  }
+
+  // -- Notification --
+  .container__7c79d {
+    background: var(--background-secondary);
+    z-index: 3;
+  }
+
+  .unreadTop__6e8c4 {
+    top: -9px;
+    z-index: 2;
+    width: 100%;
+    padding: 0;
+
+    .unreadBar__6ecda {
+      &.mention__1afd3 {
+        border-radius: 0;
+        background: linear-gradient(var(--mention-color), #0000);
+      }
+
+      &.unread__75c9f {
+        border-radius: 0;
+        background: linear-gradient(var(--unread-color), #0000);
+      }
+    }
+  }
+
+  .unreadBottom__6be9f {
+    width: 100%;
+    height: 15px;
+    padding: 0;
+
+    .unreadBar__6ecda {
+      &.mention__1afd3 {
+        border-radius: 0;
+        background: linear-gradient(#0000, var(--mention-color));
+      }
+
+      &.unread__75c9f {
+        border-radius: 0;
+        background: linear-gradient(#0000, var(--unread-color));
+      }
+    }
+  }
+
+  .unreadBar__6ecda > .text__467e0 {
+    display: none;
+  }
+
+  // Mention pill
+  .mentionsBadge_c2f85b .numberBadge__50328 {
+    background-color: var(--mention-color) !important;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background-color: inherit;
+      border-radius: 100%;
+      z-index: -1;
+      animation: var(--disable-animations), 2s pulse infinite;
+      will-change: transform;
+    }
+  }
+
+  // Unread pill
+  .unread__48cf4 {
+    top: 50%;
+    left: 5px;
+    width: 6px;
+    height: 6px;
+    z-index: 1;
+    background-color: var(--unread-color);
+    border-radius: 10px;
+    margin-top: 0;
+    transform: translate(0%, -50%);
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background-color: inherit;
+      border-radius: 100%;
+      z-index: 1;
+      animation: var(--disable-animations), pulse 2s infinite;
+      will-change: transform;
+    }
+  }
+
+  // Game activity / call area
+  .activityPanel__22355,
+  .container_d667ff {
+    border-bottom: none;
+  }
+
+  // Channel call
+  .voiceUserSummary_cc4382 svg:not(.icon__62403) {
+    padding-right: 10px;
+  }
+  [mask="url(#svg-mask-voice-user-summary-item)"] {
+    mask: none;
+  }
+
+  .tile_a411a4 {
+    background-color: var(--background-secondary-alt);
+
+    .button__13ec4,
+    .buttonColor_fa1bb3 {
+      background-color: var(--brand-experiment);
+    }
+  }
+
+  // SCTR connection
+  .container__0810b {
+    .header-2C89wJ {
+      background-color: var(--background-tertiary);
+    }
+    section {
+      background-color: var(--background-secondary);
+    }
+  }
+
+  // Channel settings
+  .group__6ae8b {
+    width: 110px;
+    border: none;
+    gap: 5px;
+
+    .item_f48d11 {
+      border-radius: 8px;
+
+      &:hover,
+      &.selected__47401 {
+        &.deny__71546 {
+          color: #ed4245;
+          background-color: #ed42452f;
+        }
+        &.passthrough__7cd54 {
+          color: #dcddde;
+          background-color: #6464643a;
+        }
+        &.allow_bbc621 {
+          color: #43b581;
+          background-color: #43b5823b;
+        }
+      }
+    }
+  }
+
+  // Invite popout
+  .inviteRow_a25947 {
+    border-radius: 0;
+    padding-left: 15px;
+
+    &:hover {
+      background-color: var(--background-modifier-hover);
+    }
+  }
+
+  // Adding roles
+  .autocompleteShadow-1aXK3x {
+    box-shadow: 0 4px 15px #00000031;
+
+    & + .autocompleteArrow-2CRgr2,
+    & ~ .header-PfVfAO {
+      background: var(--background-secondary-alt);
+    }
+    & ~ .sectionTag-euh3ZW {
+      background: var(--background-secondary);
+
+      .row-3UUG_l {
+        padding: 0;
+      }
+    }
+    & ~ .header-PfVfAO .headerText-3k--Lk {
+      margin-left: 15px;
+    }
+  }
+
+  // Boost
+  .innerWrapper__8cde3 {
+    border-radius: 5px;
+  }
+}
